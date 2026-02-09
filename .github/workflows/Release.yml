@@ -1,6 +1,6 @@
 name: Release
 
-# 触发器
+# 触发器 
 on:
   push:
     tags:
@@ -56,3 +56,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           asset_paths: '["./build/app/outputs/apk/release/SmsF_*"]'
+
